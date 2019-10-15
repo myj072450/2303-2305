@@ -1,5 +1,5 @@
-d = list(input('아버지의 혈액형을 입력하세요 Ex) A :  '))
-if len(d) == 2 :
+d = list(input('아버지의 혈액형을 입력하세요 Ex) A :  '))#A, B,O,AB중 하나만 입력하세요
+if len(d) == 2 :#혈액형 자리가 두자리인 것은 AB형
     d.append('A')
     d.append('B')
 elif d[0] == 'O' :
@@ -7,8 +7,8 @@ elif d[0] == 'O' :
     d.append('O')
     d.append('O')
 elif d[0] == 'A' :
-    dd = input('친할아버지의 혈액형을 입력하세요 :')
-    dm = input('친할머니의 혈액형을 입력하세요 :')
+    dd = input('친할아버지의 혈액형을 입력하세요 :')#A, B,O,AB중 하나만 입력하세요
+    dm = input('친할머니의 혈액형을 입력하세요 :')#A, B,O,AB중 하나만 입력하세요
     if dd == 'B' or dd == 'O' or dm == 'B' or dm == 'O' :
         d.append('O')
         d.append('A')
